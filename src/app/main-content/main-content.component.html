@@ -1,0 +1,70 @@
+<div class="container">
+
+  <nav class="navbar sticky-top navbar-dark bg-dark">
+    <button type="button" class="btn btn-success" (click)="openModal(content)">Success</button>
+  </nav>
+
+
+
+  <table class="table table-striped table-dark">
+    <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col">На английском</th>
+      <th scope="col"></th>
+      <th scope="col">Перевод</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark asd  asd  asd asd a sd as da sd a sd as da ds a</td>
+      <td>Ott asd a sd as da d a sd a sd as da sd asd  asd</td>
+      <td>@mdo ad as d as da sd a sd a sd as d asd a sd asd a </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Добавление слова</h4>
+
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label for="usr">Cлово на английском:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Перевод:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success">Сохранить</button>
+
+    <button type="button" class="btn btn-danger" (click)="closeModal()">Отменить</button>
+
+  </div>
+</ng-template>
+
+
+
+
